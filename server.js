@@ -3,6 +3,7 @@ const app = express()
 const db=require('./db')
 const bodyParser = require('body-parser');
 const fs= require('fs')
+require('dotenv').config();
 app.use(bodyParser.json())
 app.get('/', function (req, res) {
   res.send('Hello World')
@@ -20,6 +21,7 @@ app.use('/menu',memuItemRoutes);
 app.post('/items',(req,res)=>{
   res.send("data is safe");
 });
-app.listen(3000,()=>{
+const PORT=process.env.PORT || 3000;
+app.listen(PORT,()=>{
     console.log('App is running');
 })
