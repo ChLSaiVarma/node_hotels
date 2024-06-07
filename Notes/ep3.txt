@@ -1,0 +1,24 @@
+v8 engine runs the js source code into machine code and CPU runs it
+
+npm i prompt-sync  
+
+Package.json — ensure a list of packaqes with their version
+Analogy: List of cloth you want to  purchase With size and all it also 
+consists of other metadata like name and all.
+Package-lock.json — ensure detailed of every package installed with
+version, sub dependencies, store detailed, discount everything...
+it's like a detailed billed
+
+Both files work together to ensure smooth development for you and your
+team.
+
+
+One way of writing fun
+(()=>{
+    console.log("sai");
+})();
+
+Install nodemon coz no need to type node server.js again and again
+
+npm inti gives package.json
+npm i express gave package-lock.json and node_modules

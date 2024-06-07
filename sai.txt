@@ -1,0 +1,6 @@
+how are you
+
+fs.appendFile('sai.txt', "how are you", (err) => {
+  if (err) throw err;
+  console.log('The data was appended to the file!');
+});

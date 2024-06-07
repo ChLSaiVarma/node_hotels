@@ -1,0 +1,25 @@
+notes.js
+console.log("hi");
+var age=25;
+const add=(a,b)=>{
+    return a+b;
+}
+
+module.exports = {
+  age,
+  add
+}
+
+
+server.js
+
+const notes=require('./notes');
+console.log('server file is available');
+
+var age=notes.age;
+var result=notes.add(age,6);
+console.log(result);
+
+
+Install loadash  (used for array manipulation kinda ones )
+var _ = require('loadsh');
